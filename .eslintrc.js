@@ -1,6 +1,19 @@
 module.exports = {
-  extends: ["react-app"],
-  plugins: ["react"],
+  extends: [
+    "react-app",
+    "plugin:react/recommended",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  plugins: ["react", "@typescript-eslint", "jest", "jsx-a11y", "react-hooks"],
   env: {
     browser: true,
     es6: true,
@@ -22,6 +35,5 @@ module.exports = {
       {"exceptAfterSingleLine": true}
     ],
     curly: ["error", "all"],
-    semi: ["error", "never"]
   }
 };
