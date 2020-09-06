@@ -1,9 +1,5 @@
-import React from 'react';
+import React, { FC } from 'react'
 
-export const App = () => {
-  return (
-    <main>
-      App
-    </main>
-  );
+export const App: FC = () => {
+  return <main>App</main>
 }

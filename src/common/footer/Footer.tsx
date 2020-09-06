@@ -1,5 +1,5 @@
-import React, { FC } from "react"
+import React, { FC } from 'react'
 
 export const Footer: FC = () => {
-    return <footer>Footer</footer>
+  return <footer>Footer</footer>
 }

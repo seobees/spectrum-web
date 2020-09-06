@@ -7,15 +7,7 @@ module.exports = {
   //   }
   // },
   rules: {
-    'type-enum': [
-			2,
-			'always',
-			[
-				'chg',
-				'new',
-				'fix',
-			]
-    ],
+    'type-enum': [2, 'always', ['chg', 'new', 'fix']],
     'scope-case': [2, 'always', 'upper-case'],
-  }
-};
+  },
+}
