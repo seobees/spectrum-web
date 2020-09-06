@@ -4,6 +4,8 @@ import { Header } from 'common/header'
 import { Footer } from 'common/footer'
 import { App } from './App'
 
+import './common.scss'
+
 export const Root: FC = () => (
   <React.StrictMode>
     <Header />
