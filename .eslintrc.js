@@ -5,6 +5,8 @@ module.exports = {
     "airbnb-typescript",
     "airbnb/hooks",
     "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
     "plugin:jsx-a11y/recommended",
@@ -13,7 +15,7 @@ module.exports = {
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
-  plugins: ["react", "@typescript-eslint", "jest", "jsx-a11y", "react-hooks"],
+  plugins: ["react", "@typescript-eslint", "jest", "jsx-a11y", "react-hooks", "import"],
   env: {
     browser: true,
     es6: true,
@@ -35,5 +37,18 @@ module.exports = {
       {"exceptAfterSingleLine": true}
     ],
     curly: ["error", "all"],
+    quotes: ["error", "single"],
+
+    // import
+    "import/no-default-export": "error",
+    "import/prefer-default-export": "off",
+    "import/no-internal-modules": [
+      "error",
+      {
+        allow: [
+          "@testing-library/**"
+        ]
+      }
+    ],
   }
 };
