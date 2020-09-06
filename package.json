@@ -58,12 +58,14 @@
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.6",
     "eslint-plugin-react-hooks": "4.1.0",
+    "lint-staged": "10.3.0",
     "prettier": "2.1.1",
     "stylelint": "13.7.0",
     "stylelint-order": "4.1.0"
   },
   "husky": {
     "hooks": {
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -71,5 +73,11 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint"
+    ],
+    "*.{scss,css}": "stylelint --syntax=scss"
   }
 }
