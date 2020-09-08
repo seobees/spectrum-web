@@ -1,9 +1,15 @@
 import React, { FC } from 'react'
 import { Input } from 'ui-kit/atoms'
+import { styleNames } from 'libs/style-names'
 import styles from './Header.module.scss'
 
-export const Header: FC = () => (
-  <header className={styles.header}>
-    <Input type="search" placeholder="Search" />
-  </header>
-)
+const sn = styleNames(styles)
+
+export const Header: FC = () => {
+  const headerClasses = sn('header')
+  return (
+    <header className={headerClasses}>
+      <Input id="header-search" type="search" placeholder="Search" />
+    </header>
+  )
+}
