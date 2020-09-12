@@ -9,7 +9,7 @@ export const Header: FC = () => {
   const headerClasses = sn('header')
   return (
     <header className={headerClasses}>
-      <Input id="header-search" type="search" placeholder="Search" />
+      <Input id="header-search" label="Search" type="search" placeholder="Search" />
     </header>
   )
 }

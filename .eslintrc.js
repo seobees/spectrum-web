@@ -1,3 +1,9 @@
+const boolPropsWhiteList = [
+  'visible',
+  'valid',
+  'loading',
+]
+
 module.exports = {
   extends: [
     'react-app',
