@@ -1,0 +1,14 @@
+@import "design/settings";
+
+.content-widget {
+  display: grid;
+  row-gap: 48px;
+  padding: 37px 32px;
+  background-color: map-get($colors, "white");
+  border-radius: 14px;
+
+  &__title {
+    font-size: 24px;
+    color: map-get($colors, "dark");
+  }
+}
