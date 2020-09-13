@@ -1,0 +1,16 @@
+@import "design/settings";
+
+.search {
+  position: relative;
+
+  &__icon {
+    height: 100%;
+    left: 17px;
+    opacity: 0.5;
+    position: absolute;
+  }
+
+  &__input {
+    padding-left: 45px;
+  }
+}

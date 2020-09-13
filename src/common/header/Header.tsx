@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Input } from 'ui-kit/atoms'
+import { Search } from 'ui-kit/molecules'
 import { styleNames } from 'libs/style-names'
 import styles from './Header.module.scss'
 
@@ -9,7 +9,7 @@ export const Header: FC = () => {
   const headerClasses = sn('header')
   return (
     <header className={headerClasses}>
-      <Input id="header-search" label="Search" type="search" placeholder="Search" />
+      <Search id="header-search" label="Search" placeholder="Search" />
     </header>
   )
 }

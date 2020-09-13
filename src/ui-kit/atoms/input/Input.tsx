@@ -1,11 +1,11 @@
 import React, { FC, ChangeEvent } from 'react'
-import { styleNames } from 'libs/style-names'
+import { mergeStyles, styleNames } from 'libs/style-names'
 import { noop } from 'libs/utils'
 import styles from './Input.module.scss'
 
 const sn = styleNames(styles)
 
-type Props = {
+type Props = Readonly<{
   /* Properties */
   id: string
   value?: string | number
@@ -13,12 +13,13 @@ type Props = {
   type?: 'text' | 'search' | 'number'
   label?: string
   labelVisible?: boolean
+  className?: string
 
   /* Handlers */
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void
-}
+}>
 
-export const Input: FC<Props> = ({ id, type, value, label, labelVisible, placeholder, onChange }: Props) => {
+export const Input: FC<Props> = ({ id, type, value, label, labelVisible, placeholder, className, onChange }: Props) => {
   const inputClasses = sn('input')
   const inputControlClasses = sn('input__control')
 
@@ -26,7 +27,14 @@ export const Input: FC<Props> = ({ id, type, value, label, labelVisible, placeho
   return (
     <div className={inputClasses}>
       <label htmlFor={id}>{labelEl}</label>
-      <input id={id} type={type} value={value} placeholder={placeholder} onChange={onChange} className={inputControlClasses} />
+      <input
+        id={id}
+        type={type}
+        value={value}
+        placeholder={placeholder}
+        onChange={onChange}
+        className={mergeStyles(inputControlClasses, className)}
+      />
     </div>
   )
 }

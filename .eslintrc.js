@@ -1,8 +1,4 @@
-const boolPropsWhiteList = [
-  'visible',
-  'valid',
-  'loading',
-]
+const boolPropsWhiteList = ['visible', 'valid', 'loading']
 
 module.exports = {
   extends: [
@@ -59,6 +55,18 @@ module.exports = {
 
     // import
     'import/no-default-export': 'error',
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'internal'],
+        'newlines-between': 'never',
+        pathGroups: [
+          { pattern: 'ui-kit/*', group: 'internal', position: 'after' },
+          { pattern: 'libs/*', group: 'internal', position: 'after' },
+          { pattern: '*.module.scss', group: 'sibling', position: 'before' },
+        ],
+      },
+    ],
     'import/prefer-default-export': 'off',
     'import/no-internal-modules': [
       'error',
