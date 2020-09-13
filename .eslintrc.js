@@ -71,9 +71,11 @@ module.exports = {
     'import/no-internal-modules': [
       'error',
       {
-        allow: ['@testing-library/**', 'app/*', 'common/*', 'core/*', 'design/*/*.scss', 'ui-kit/*', 'libs/*', 'classnames/*', 'types/*'],
+        allow: ['@testing-library/**', 'app/*', 'common/*', 'core/*', 'design/*/*.scss', 'ui-kit/*', 'libs/*', 'classnames/*', 'types/*', 'pages/*'],
       },
     ],
+
+    'react/prefer-read-only-props': 'error',
   },
 
   settings: {

@@ -1,0 +1,12 @@
+/**
+ * ITCSS Structure
+ * https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+ */
+
+@import "./settings"; // variables, colors, fonts etc
+@import "./tools"; // globally used functions and mixins
+@import "./generic"; // normalizing css, box sizing
+@import "./elements"; // bare html elements, reset lists, anchors
+@import "./objects"; // simple reusable containers, grids, global animations
+@import "./components"; // components
+@import "./trumps"; // utils, helpers, classes visibility, alt colors

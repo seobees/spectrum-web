@@ -1,0 +1,15 @@
+@import "../settings";
+@import "../components";
+
+@mixin layout-container {
+  padding: map-get($header, "height") 0 0 map-get($side-bar, "width");
+}
+
+@mixin page-container {
+  min-width: map-get($page-dimensions, "min-width");
+  max-width: map-get($page-dimensions, "max-width");
+}
+
+@mixin page-bounds {
+  padding: 30px;
+}

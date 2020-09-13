@@ -1,15 +1,16 @@
 @import "design/settings";
+@import "design/components";
 
 .header {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
+  left: map-get($side-bar, "width");
   display: grid;
   grid-template-columns: auto max-content max-content max-content;
   column-gap: 30px;
   align-items: center;
-  width: 100%;
-  height: 70px;
+  height: map-get($header, "height");
   padding: 13px 31px 13px 78px;
   border-bottom: 1px solid map-get($colors, "gray");
 

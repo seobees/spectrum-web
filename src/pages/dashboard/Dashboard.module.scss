@@ -1,0 +1,10 @@
+@import "design/settings";
+@import "design/trumps";
+
+.dashboard {
+  display: block;
+  background-color: map-get($colors, "light-gray");
+
+  @include page-container;
+  @include page-bounds;
+}

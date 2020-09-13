@@ -14,6 +14,7 @@ module.exports = {
     "declaration-block-no-duplicate-properties": true,
     indentation: [ 2, { "baseIndentLevel": 1 } ],
     "declaration-colon-newline-after": "always-multi-line",
-    "color-hex-case": "upper"
+    "color-hex-case": "upper",
+    "declaration-block-trailing-semicolon": "always",
   }
 }

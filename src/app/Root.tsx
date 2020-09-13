@@ -2,15 +2,15 @@ import React, { FC } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { Header } from 'common/header'
 import { Footer } from 'common/footer'
-import { App } from './App'
-
-import './common.scss'
+import { SideBar } from 'common/side-bar'
+import { SiteMap } from './site-map'
 
 export const Root: FC = () => (
   <React.StrictMode>
     <Header />
+    <SideBar />
     <BrowserRouter>
-      <App />
+      <SiteMap />
     </BrowserRouter>
     <Footer />
   </React.StrictMode>

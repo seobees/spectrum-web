@@ -1,0 +1,10 @@
+@import "design/settings";
+@import "design/components";
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  width: map-get($side-bar, "width");
+  height: 100%;
+  border-right: 1px solid map-get($colors, "gray");
+}
