@@ -1,0 +1,19 @@
+@import "design/settings";
+
+.logo {
+  display: block;
+
+  &__title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__first {
+    font-weight: map-get($font-weights, "bold");
+    color: map-get($colors, "blue");
+  }
+
+  &__second {
+    color: map-get($colors, "dark");
+  }
+}

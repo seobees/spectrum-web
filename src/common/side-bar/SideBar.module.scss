@@ -6,5 +6,6 @@
   top: 0;
   width: map-get($side-bar, "width");
   height: 100%;
+  padding: 24px;
   border-right: 1px solid map-get($colors, "gray");
 }

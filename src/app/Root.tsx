@@ -6,9 +6,9 @@ import { SiteMap } from './site-map'
 
 export const Root: FC = () => (
   <React.StrictMode>
-    <Header />
-    <SideBar />
     <BrowserRouter>
+      <Header />
+      <SideBar />
       <SiteMap />
     </BrowserRouter>
   </React.StrictMode>
