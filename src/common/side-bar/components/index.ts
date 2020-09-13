@@ -1,2 +1,2 @@
 export { Logo } from './logo'
-export { NavItem } from './nav-item'
+export { Navigation } from './navigation'
