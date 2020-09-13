@@ -1,4 +1,17 @@
+@import "design/settings";
+
 .user {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  row-gap: 3px;
+
+  &__name {
+    color: $dark-primary-color;
+    font-size: 14px;
+    font-weight: $font-weight-bold;
+  }
+
+  &__role {
+    color: $dark-gray-color;
+    font-size: 12px;
+  }
 }

@@ -1,8 +1,8 @@
 import React, { ChangeEvent, FC, useCallback, useState } from 'react'
 import { Search } from 'ui-kit/molecules'
 import { styleNames } from 'libs/style-names'
+import { LanguageSelector, Notifications, User } from './components'
 import styles from './Header.module.scss'
-import { LanguageSelector, User } from './components'
 
 const sn = styleNames(styles)
 
@@ -25,7 +25,8 @@ export const Header: FC = () => {
         className={headerSearchClasses}
         onChange={handleChange}
       />
-      <LanguageSelector language="English" />
+      <Notifications count={1} />
+      <LanguageSelector language="English" country="US" />
       <User userName="Igor Cheliadinski" userRole="Admin" />
     </header>
   )

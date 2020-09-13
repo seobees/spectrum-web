@@ -26,7 +26,7 @@ export const Search: FC<Props> = ({ id, value, placeholder, label, labelVisible,
 
   return (
     <div className={mergeStyles(searchClasses, className)}>
-      <SearchIcon className={searchIconClasses} />
+      <SearchIcon width={18} height={18} className={searchIconClasses} />
       <Input
         id={id}
         value={value}

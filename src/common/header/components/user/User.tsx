@@ -11,11 +11,13 @@ type Props = {
 
 export const User: FC<Props> = ({ userName, userRole }: Props) => {
   const userClasses = sn('user')
+  const userNameClasses = sn('user__name')
+  const userRoleClasses = sn('user__role')
 
   return (
     <div className={userClasses}>
-      <span>{userName}</span>
-      <span>{userRole}</span>
+      <span className={userNameClasses}>{userName}</span>
+      <span className={userRoleClasses}>{userRole}</span>
     </div>
   )
 }

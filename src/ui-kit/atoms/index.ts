@@ -1,2 +1,2 @@
 export { Input } from './input'
-export { SearchIcon } from './icons'
+export { SearchIcon, FlagIcon, BellIcon } from './icons'

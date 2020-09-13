@@ -71,7 +71,7 @@ module.exports = {
     'import/no-internal-modules': [
       'error',
       {
-        allow: ['@testing-library/**', 'app/*', 'common/*', 'core/*', 'design/*/*.scss', 'ui-kit/*', 'libs/*', 'classnames/*'],
+        allow: ['@testing-library/**', 'app/*', 'common/*', 'core/*', 'design/*/*.scss', 'ui-kit/*', 'libs/*', 'classnames/*', 'types/*'],
       },
     ],
   },
