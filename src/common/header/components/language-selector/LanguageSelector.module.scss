@@ -1,15 +1,15 @@
 @import "design/settings";
 
 .language-selector {
-  align-items: center;
-  column-gap: 16px;
-  cursor: pointer;
   display: grid;
   grid-template-columns: min-content max-content;
+  column-gap: 16px;
+  align-items: center;
+  cursor: pointer;
 
   &__label {
-    color: $gray-color-60;
     font-size: 14px;
     font-weight: $font-weight-semi-bold;
+    color: $gray-color-60;
   }
 }

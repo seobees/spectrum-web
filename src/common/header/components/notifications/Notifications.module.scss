@@ -1,8 +1,8 @@
 @import "design/settings";
 
 .notifications {
-  display: flex;
   position: relative;
+  display: flex;
 
   &__bell {
     color: $blue-color;
@@ -11,17 +11,17 @@
   &__count {
     --circle-size: 16px;
 
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    font-size: 12px;
+    color: $white-color;
     background: $red-color;
     border-radius: 50%;
-    color: $white-color;
-    display: flex;
-    font-size: 12px;
-    height: var(--circle-size);
-    justify-content: center;
-    position: absolute;
-    right: -5px;
-    top: -5px;
-    width: var(--circle-size);
   }
 }

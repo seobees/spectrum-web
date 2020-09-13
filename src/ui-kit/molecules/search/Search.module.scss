@@ -2,14 +2,14 @@
 @import "design/components";
 
 .search {
-  height: $search-height;
   position: relative;
+  height: $search-height;
 
   &__icon {
-    height: 100%;
-    left: 17px;
-    opacity: 0.5;
     position: absolute;
+    left: 17px;
+    height: 100%;
+    opacity: 0.5;
   }
 
   &__input {

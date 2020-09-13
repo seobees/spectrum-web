@@ -1,8 +1,8 @@
 module.exports = {
   plugins: ["stylelint-order"],
+  extends: ["stylelint-config-recess-order"],
   rules: {
     "order/order": ["custom-properties", "declarations", "at-rules", "rules"],
-    "order/properties-alphabetical-order": true,
     "string-quotes": "double",
     "comment-no-empty": true,
     "color-no-invalid-hex": true,
