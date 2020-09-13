@@ -75,7 +75,7 @@ module.exports = {
       },
     ],
 
-    'react/prefer-read-only-props': 'error',
+    'react/prop-types': ['error', {ignore: ['children']}],
   },
 
   settings: {

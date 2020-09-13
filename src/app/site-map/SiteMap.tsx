@@ -12,8 +12,8 @@ export const SiteMap: FC = () => {
   return (
     <main className={wrapperClasses}>
       <Switch>
-        <Route path="/" component={Dashboard} exact />
-        <Redirect to="/" />
+        <Route path="/dashboard" component={Dashboard} exact />
+        <Redirect to="/dashboard" />
       </Switch>
     </main>
   )

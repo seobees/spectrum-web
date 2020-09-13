@@ -4,8 +4,16 @@
 .side-bar {
   position: fixed;
   top: 0;
+  display: grid;
+  grid-auto-rows: max-content;
+  row-gap: 30px;
   width: map-get($side-bar, "width");
   height: 100%;
   padding: 24px;
   border-right: 1px solid map-get($colors, "gray");
+
+  &__list {
+    display: grid;
+    row-gap: 10px;
+  }
 }
