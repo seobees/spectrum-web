@@ -2,6 +2,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: $primary-font, sans-serif;
+  font-family: map-get($fonts, "primary"), sans-serif;
   font-weight: map-get($font-weights, "regular");;
 }
