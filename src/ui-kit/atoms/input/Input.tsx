@@ -5,7 +5,7 @@ import styles from './Input.module.scss'
 
 const sn = styleNames(styles)
 
-type Props = Readonly<{
+export type InputProps = Readonly<{
   /* Properties */
   id: string
   value?: string | number
@@ -19,7 +19,7 @@ type Props = Readonly<{
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void
 }>
 
-export const Input: FC<Props> = ({ id, type, value, label, labelVisible, placeholder, className, onChange }: Props) => {
+export const Input: FC<InputProps> = ({ id, type, value, label, labelVisible, placeholder, className, onChange }: InputProps) => {
   const inputClasses = sn('input')
   const inputControlClasses = sn('input__control')
 

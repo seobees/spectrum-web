@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FC } from 'react'
 import { Input, SearchIcon } from 'ui-kit/atoms'
-import { styleNames } from 'libs/style-names'
+import { mergeStyles, styleNames } from 'libs/style-names'
 import { noop } from 'libs/utils'
 import styles from './Search.module.scss'
 
@@ -13,18 +13,19 @@ type Props = {
   placeholder?: string
   label?: string
   labelVisible?: boolean
+  className?: string
 
   /* Handlers */
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void
 }
 
-export const Search: FC<Props> = ({ id, value, placeholder, label, labelVisible, onChange, ...rest }: Props) => {
+export const Search: FC<Props> = ({ id, value, placeholder, label, labelVisible, className, onChange }: Props) => {
   const searchClasses = sn('search')
   const searchIconClasses = sn('search__icon')
   const inputClasses = sn('search__input')
 
   return (
-    <div className={searchClasses}>
+    <div className={mergeStyles(searchClasses, className)}>
       <SearchIcon className={searchIconClasses} />
       <Input
         id={id}
@@ -47,6 +48,7 @@ Search.defaultProps = {
   placeholder: '',
   label: '',
   labelVisible: false,
+  className: '',
 
   onChange: noop,
 }

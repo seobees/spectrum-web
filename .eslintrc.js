@@ -63,7 +63,7 @@ module.exports = {
         pathGroups: [
           { pattern: 'ui-kit/*', group: 'internal', position: 'after' },
           { pattern: 'libs/*', group: 'internal', position: 'after' },
-          { pattern: '*.module.scss', group: 'sibling', position: 'before' },
+          { pattern: '*.module.scss', group: 'sibling', position: 'after' },
         ],
       },
     ],

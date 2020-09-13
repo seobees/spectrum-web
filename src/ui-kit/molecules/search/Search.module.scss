@@ -1,6 +1,8 @@
 @import "design/settings";
+@import "design/components";
 
 .search {
+  height: $search-height;
   position: relative;
 
   &__icon {

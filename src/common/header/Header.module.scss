@@ -1,9 +1,13 @@
 @import "design/settings";
 
 .header {
+  align-items: center;
   border-bottom: 1px solid $gray-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 70px;
   left: 0;
+  padding: 13px 31px 13px 78px;
   position: fixed;
   top: 0;
   width: 100%;
