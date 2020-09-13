@@ -9,8 +9,8 @@ export const Dashboard: FC = () => {
   const titleClasses = sn('dashboard__title')
 
   return (
-    <main className={wrapperClasses}>
+    <section className={wrapperClasses}>
       <h1 className={titleClasses}>Dashboard</h1>
-    </main>
+    </section>
   )
 }

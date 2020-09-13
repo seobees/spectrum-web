@@ -6,7 +6,7 @@ import styles from './Navigation.module.scss'
 const sn = styleNames(styles)
 
 export const Navigation: FC = () => {
-  const listClasses = sn('side-bar__list')
+  const listClasses = sn('navigation__list')
 
   return (
     <nav>
@@ -15,7 +15,7 @@ export const Navigation: FC = () => {
           <NavItem to="/dashboard">Dashboard</NavItem>
         </li>
         <li>
-          <NavItem to="/some-page">PageSpeed</NavItem>
+          <NavItem to="/pagespeed">PageSpeed</NavItem>
         </li>
       </ul>
     </nav>

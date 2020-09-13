@@ -16,12 +16,20 @@
     background-color: map-get($colors, "light-gray");
   }
 
+  &:active {
+    background-color: map-get($colors, "gray");
+  }
+
   &--active {
     color: map-get($colors, "white");
     background-color: map-get($colors, "blue");
 
     &:hover {
-      background-color: map-get($colors, "blue");
+      background-color: map-get($colors, "dark-blue");
+    }
+
+    &:active {
+      opacity: 0.7;
     }
 
     &::before {

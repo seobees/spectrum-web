@@ -1,0 +1,15 @@
+@import "design/settings";
+@import "design/tools";
+@import "design/trumps";
+
+.pagespeed {
+  display: block;
+  background-color: map-get($colors, "light-gray");
+
+  @include page-container;
+  @include page-bounds;
+
+  &__title {
+    @include heading-xl;
+  }
+}
