@@ -8,6 +8,7 @@ const sn = styleNames(styles)
 
 export const Header: FC = () => {
   const headerClasses = sn('header')
+  const headerSearchClasses = sn('header__search')
   const [search, setSearch] = useState<string>('')
 
   const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
@@ -16,7 +17,14 @@ export const Header: FC = () => {
 
   return (
     <header className={headerClasses}>
-      <Search id="header-search" label="Search" placeholder="Search" value={search} onChange={handleChange} />
+      <Search
+        id="header-search"
+        label="Search"
+        placeholder="Search"
+        value={search}
+        className={headerSearchClasses}
+        onChange={handleChange}
+      />
       <LanguageSelector language="English" />
       <User userName="Igor Cheliadinski" userRole="Admin" />
     </header>
