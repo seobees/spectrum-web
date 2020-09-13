@@ -13,6 +13,7 @@ module.exports = {
     "no-duplicate-selectors": true,
     "declaration-block-no-duplicate-properties": true,
     indentation: [ 2, { "baseIndentLevel": 1 } ],
-    "declaration-colon-newline-after": "always-multi-line"
+    "declaration-colon-newline-after": "always-multi-line",
+    "color-hex-case": "upper"
   }
 }

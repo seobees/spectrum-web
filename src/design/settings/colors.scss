@@ -1,13 +1,12 @@
-/* Grays */
-$gray-color: #E8E8E8;
-$light-gray-color: #F5F6FA;
-$gray-color-90: #D5D5D5;
-$gray-color-60: #646464;
-$dark-gray-color: #565656;
+$colors: (
+  "red": #FF0000,
+  "blue": #4880FF,
+  "white": #FFFFFF,
+  "dark-primary": #404040,
 
-/* Blacks */
-$dark-primary-color: #404040;
-
-$blue-color: #4880FF;
-$red-color: #FF0000;
-$white-color: #FFFFFF;
+  "gray": #E8E8E8,
+  "light-gray": #F5F6FA,
+  "gray-90": #D5D5D5,
+  "gray-60": #646464,
+  "dark-gray": #565656
+)

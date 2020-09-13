@@ -9,8 +9,8 @@
     height: $search-height;
     padding: 0 17px;
     font-size: 14px;
-    background-color: $light-gray-color;
-    border: 1px solid $gray-color-90;
+    background-color: map-get($colors, "light-gray");
+    border: 1px solid map-get($colors, "gray-90");
     border-radius: 19px;
   }
 }

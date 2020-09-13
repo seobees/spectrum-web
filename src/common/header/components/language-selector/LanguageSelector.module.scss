@@ -9,7 +9,7 @@
 
   &__label {
     font-size: 14px;
-    font-weight: $font-weight-semi-bold;
-    color: $gray-color-60;
+    font-weight: map-get($font-weights, "semi-bold");
+    color: map-get($colors, "gray-60");
   }
 }

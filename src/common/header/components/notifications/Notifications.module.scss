@@ -5,7 +5,7 @@
   display: flex;
 
   &__bell {
-    color: $blue-color;
+    color: map-get($colors, $key: "blue");
   }
 
   &__count {
@@ -20,8 +20,8 @@
     width: var(--circle-size);
     height: var(--circle-size);
     font-size: 12px;
-    color: $white-color;
-    background: $red-color;
+    color: map-get($colors, "white");
+    background-color: map-get($colors, "red");
     border-radius: 50%;
   }
 }

@@ -3,5 +3,5 @@
 * {
   box-sizing: border-box;
   font-family: $primary-font, sans-serif;
-  font-weight: $font-weight-regular;
+  font-weight: map-get($font-weights, "regular");;
 }
