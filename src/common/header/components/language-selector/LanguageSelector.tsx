@@ -13,6 +13,9 @@ export const LanguageSelector: FC<Props> = ({ language }: Props) => {
 
   return (
     <div className={languageSelectorClasses}>
+      <span role="img" aria-label="country flag">
+        🇺🇸
+      </span>
       <span>{language}</span>
     </div>
   )
