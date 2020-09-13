@@ -6,5 +6,11 @@ const sn = styleNames(styles)
 
 export const Dashboard: FC = () => {
   const wrapperClasses = sn('dashboard')
-  return <main className={wrapperClasses}>Dashboard</main>
+  const titleClasses = sn('dashboard__title')
+
+  return (
+    <main className={wrapperClasses}>
+      <h1 className={titleClasses}>Dashboard</h1>
+    </main>
+  )
 }

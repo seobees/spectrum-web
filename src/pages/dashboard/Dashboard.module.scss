@@ -1,4 +1,5 @@
 @import "design/settings";
+@import "design/tools";
 @import "design/trumps";
 
 .dashboard {
@@ -7,4 +8,8 @@
 
   @include page-container;
   @include page-bounds;
+
+  &__title {
+    @include heading-xl;
+  }
 }

@@ -1,0 +1,6 @@
+@import "../settings";
+
+@mixin heading-xl {
+  font-size: 32px;
+  font-weight: map-get($font-weights, "bold");
+}
