@@ -12,6 +12,7 @@
   align-items: center;
   height: map-get($header, "height");
   padding: 13px 31px 13px 78px;
+  background-color: map-get($colors, "white");
   border-bottom: 1px solid map-get($colors, "gray");
 
   &__search {
